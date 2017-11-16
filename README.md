@@ -27,7 +27,7 @@ undefined” if variable has not been set before.
    mysh lists all processes running in the background, in any format you like. mysh should keep a list
 and not rely on external programs like ps to create its output. output.
 - `bye`  
-   mysh exits with exit status 0. mysh accepts <control-D> (end-of-file) on the input
+   mysh exits with exit status 0. mysh accepts `<control-D>` (end-of-file) on the input
 stream and treats it as if the user had typed bye.
 
 # Program-control commands
@@ -35,8 +35,7 @@ stream and treats it as if the user had typed bye.
 - `cmd param∗`  
    The user submits this command to execute a program. Here, cmd is a token that specifies the filename
 of the program the user wants to execute. It is followed by zero or more tokens specifying parameters.
-mysh should wait for the program to finish before it prompts for and accepts the next command. If, cmd starts with a / character, it is a full path name
-starting at the root. Similarly, a cmd that starts with ./ is a path name starting in the current directory.
+mysh should wait for the program to finish before it prompts for and accepts the next command. If, cmd starts with a `/` character, it is a full path name starting at the root. Similarly, if a cmd that starts with `./` is a path name starting in the current directory.
 - `cmd param∗ &`  
    This command is identical to the previous one, except that the program should run in the background,
 that is, mysh should immediately prompt for and accept the next command.
