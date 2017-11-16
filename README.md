@@ -9,9 +9,8 @@ contents of the command line.
 - Like other shells, mysh accepts both built-in commands and program-control commands
 - Commands are constructed out of tokens. A token is string without any space. Tokens are subject to variable
 substitution, as described below. There can be any amount of empty space before and after tokens.
-- The % symbol introduces a comment, which continues to the end of the line. You may assume that % never
-appears within a token. mysh ignores all characters in a comment. If a line is empty (except perhaps for
-spaces) except for a comment, it is a valid command that has no effect.
+- The `%` symbol introduces a comment, which continues to the end of the line. '%' should never
+appears within a token. mysh ignores all characters in a comment. 
 
 # Built-in Commands
 
