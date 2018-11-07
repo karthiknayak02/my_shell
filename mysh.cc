@@ -19,7 +19,6 @@ using namespace std;
  */
 
 void change_dir(string &directoryName) {
-    char cwd[256];
     if (directoryName[0] != '/') directoryName = '/' + directoryName;
     
     if((chdir(directoryName.c_str())) < 0)
